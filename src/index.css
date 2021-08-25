@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: black;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  height: 100vh;
+}
+.navbar {
+  height: 10%;
+  background-color: #CC0000;
+}
+.categorys {
+  height: 30%;
+  background-color: #CC0000;
+}
+@media all and (max-width: 1200px) {
+  .categorys {
+    height: 5%;
+  }
+}

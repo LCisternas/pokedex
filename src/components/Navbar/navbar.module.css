@@ -1,0 +1,92 @@
+.navbarContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 80%;
+  margin: 0px 20px;
+}
+.iconFalse {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #facb14;
+  position: fixed;
+  right: 100%;
+}
+.iconFalse a {
+  margin: 0px 20px;
+  font-size: 36px;
+  cursor: pointer;
+}
+@media all and (max-width: 1200px) {
+  .iconFalse {
+    right: 0;
+  }
+}
+.falseSidebar {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: #facb14;
+  transition: all 0.3s;
+}
+.trueSidebar {
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  background-color: #facb14;
+  transition: all 0.3s;
+}
+.iconTrue {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #CC0000;
+}
+.iconTrue a {
+  font-size: 36px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.navbarButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 90%;
+}
+.navbarButtons button {
+  margin: 10px 0px;
+  width: 40%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #CC0000;
+  color: #CC0000;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.navbarButtons button:hover {
+  background-color: #CC0000;
+  color: #facb14;
+}

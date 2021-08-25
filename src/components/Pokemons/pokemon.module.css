@@ -1,0 +1,132 @@
+.titleReserv {
+  color: #facb14;
+  text-align: center;
+  margin-top: 50px;
+}
+.pokemonListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.individualPokemon {
+  background-color: #CC0000;
+  width: 400px;
+  height: 400px;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.individualPokemonTitle {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.individualPokemonImage {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.individualPokemonImage img {
+  height: 100%;
+}
+.individualPokemonButton {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.individualPokemonButton button {
+  width: 40%;
+  height: 60%;
+  background-color: transparent;
+  border: 2px solid #facb14;
+  color: #facb14;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.individualPokemonButton button:hover {
+  background-color: #facb14;
+  color: #CC0000;
+}
+.notMoreInfo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -300%;
+  background-color: #facb14;
+  transition: all 0.3s;
+}
+.moreInfo {
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  background-color: #facb14;
+  transition: all 0.3s;
+}
+.iconClose {
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 36px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.pokeInfo {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.pokeTitle {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+.pokeImage {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+.pokeImage img {
+  height: 100%;
+}
+.pokeStats {
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pokeStats p {
+  margin: 0px 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+@media all and (max-width: 480px) {
+  .pokeTitle {
+    font-size: 21px;
+  }
+  .pokeImage img {
+    height: 80%;
+  }
+  .pokeStats p {
+    margin: 0px 10px;
+    font-size: 20px;
+  }
+  .individualPokemon {
+    width: 300px;
+    height: 300px;
+  }
+}

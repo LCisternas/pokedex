@@ -1,0 +1,30 @@
+.categoryContainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.categoryContainer button {
+  height: 15%;
+  width: 20%;
+  margin: 0px 10px;
+  border: 2px solid #facb14;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #facb14;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.categoryContainer button:hover {
+  background-color: #facb14;
+  color: #CC0000;
+}
+@media all and (max-width: 1200px) {
+  .categoryContainer {
+    position: fixed;
+    left: -600%;
+  }
+}
